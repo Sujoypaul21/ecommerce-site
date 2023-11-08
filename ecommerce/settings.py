@@ -113,8 +113,12 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pdpframework',
+        'USER': 'root',
+        'PASSWORD': 'Sujoy@1998',
+        'PORT': 3306,
+        'HOST': 'localhost'
     }
 }
 
@@ -207,30 +211,7 @@ AWS_S3_FILE_OVERWRITE = False
 #ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 
-# RDS (Database) configuration settings:
 
-'''
-DATABASES = {
-
-    'default': {
-
-        'ENGINE': 'django.db.backends.postgresql',
-
-        'NAME': '',
-
-        'USER': '',
-
-        'PASSWORD': '',
-
-        'HOST': '',
-
-        'PORT': '5432',
-
-
-    }
-
-}
-'''
 
 
 
